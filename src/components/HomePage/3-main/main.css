@@ -1,0 +1,230 @@
+main.flix{
+
+  gap: 1.5rem;
+  align-items: start;
+  
+}
+
+/* 
+===========================================
+for left div > buttons
+=========================================== */
+
+main div.left-div{
+
+    display: flex;
+    gap: 10px;
+}
+.button-coulm{
+  display: flex;
+  flex-direction: column;
+    /* gap: 2.50rem; */
+    
+}
+
+main div.left-div button{
+  background-color: rgb(132, 226, 250);
+  padding: 10px ;
+  cursor: pointer;
+  width: 10rem;
+  text-align: center;
+  border-radius: 8px ;
+  font-size: 1.1rem;
+  opacity: 0.7;
+  margin-bottom: 20px;
+  border: none;
+  
+}
+main div.left-div button:hover{
+  opacity: 1;
+  transition: 0.3s;
+}
+
+main div.left-div button.active{
+  opacity: 1;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  padding: 12px;
+  border: 1px solid var(--blue);
+}
+
+/* .img-card{
+  width: 220px;
+} */
+
+.name-card{
+  font-size: 80px;
+}
+h2{
+  margin: 10px 0 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+===========================================
+for right div > cards
+=========================================== */
+.header-chat{
+  padding: 10px 15px ;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  padding-bottom: 30px;
+  
+}
+
+h3{
+  font-size: 2rem;
+  margin: 10px 0 0  6px;
+}
+
+.box-user{
+  margin: 0;
+  padding: 0;
+}
+
+.button-user-chat{
+  width: 100%;
+  padding-top: 3px;
+  color: var(--subtitle);
+  padding-bottom: 3px;
+
+}
+.button-user-chat:hover{
+  background-color: rgba(240, 248, 255, 0.171);
+  color: var(--title);
+}
+
+.name-user{
+  margin: 6px 0 0 4px;
+  font-size: 1.2rem;
+}
+.img-chat{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 8px 0 6px;
+}
+.chat{
+  display: flex;
+}
+.chats{
+  display: flex;
+  justify-content: space-between;
+}
+
+.Seetting{
+  justify-content: end;
+}
+.name-back{
+  display: flex;
+}
+.card{
+  border: 1px solid rgba(93, 188, 252, 0.185);
+  border-radius: 6px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.014) , #312f2fd0);
+  width: 100%;
+  height: 650px;
+}
+
+
+.img-card{
+  border-radius: 6px 6px 0 0 ;
+}
+
+
+
+main div.right-div{
+  /* flex-grow: 1; */
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+
+}
+
+article.card div.box{
+  padding: 1rem 0.5rem;
+
+}
+
+article.card div.box .title{
+  margin-bottom: 0.5rem;
+  color: var(--title);
+  
+}
+article.card div.box .sub-title{
+  font-size: 0.9rem;
+  color: var(--subtitle);
+  margin-bottom: 1rem;
+}
+
+article.card div.box .icons{
+  justify-content: space-between;
+}
+
+article.card div.box .icons .link-git{
+ gap: 12px;
+ margin-bottom: -0.5rem;
+ color: var(--subtitle);
+
+}
+ article.card .icon-link:hover ,article.card .icon-github:hover{
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--blue);
+ }
+ article.card .more{
+  color: var(--blue);
+  font-size: 0.8rem;
+  margin-bottom: -0.5rem;
+ }
+ 
+ .LOGO{
+  width: 400px;
+ }
+
+
+
+
+
+ @media (max-width: 630px){
+
+  main.my-main{
+    flex-direction: column;
+    gap: 2.50rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  main div.left-div{
+    /* flex-grow: 1; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    justify-content: center;
+  
+  }
+  .LOGO{
+    width: 400px;
+    display: block;
+   }
+ }
+

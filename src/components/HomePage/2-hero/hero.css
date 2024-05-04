@@ -1,0 +1,74 @@
+
+
+/* 
+======================================================
+                 for img and .icon-verified and h1 and p 
+====================================================== */
+
+section.hero{
+  display: flex;
+  margin-top: 2.5rem;
+}
+section.hero div.left-section{
+  flex-grow: 1;
+}
+.avatar{
+  border-radius: 50%;
+  padding: 1px;
+  width: 180px;
+  height: 180px;
+  border: 1px solid rgba(82, 81, 81, 0.521);
+  box-shadow: -0.5px 1px 20px rgb(46, 46, 46);
+  margin-left: 20px;
+  cursor: pointer;
+}
+.icon-verified{
+  margin-left: -1.5rem;
+  
+}
+
+section.hero div.icons{
+  padding: 10px ;
+  margin-left: 2rem;
+  
+}
+
+section.hero h1.H1-title{
+  font-size: 2.95rem;
+  color: var(--title);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: 3rem;
+}
+section.hero .p-title{
+  font-size: 1rem;
+  color: var(--subtitle);
+  line-height: 1.1rem;
+  margin-bottom: 10px;
+
+}
+section.hero .icons{
+
+  font-size: 1.1rem;
+  gap: 1rem;
+  color: var(--subtitle);
+
+}
+section.hero .icons .icon:hover{
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--blue);
+}
+
+
+
+/* 
+======================================================
+                 for section right > animation
+====================================================== */
+
+
+
+
+

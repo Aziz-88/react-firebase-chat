@@ -1,0 +1,232 @@
+header.flix {
+  justify-content: space-between;
+  padding: 0 2rem;
+  margin-top: 1.2rem;
+}
+
+
+header ul.flix {
+  gap: 16px;
+}
+header ul li a {
+  color: var(--title);
+  opacity: 0.9;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+header ul li a:hover {
+  opacity: 1rem;
+  font-size: 0.9rem;
+  color: var(--blue);
+}
+
+header button {
+  font-size: 1.2rem;
+}
+
+
+
+/* Model == pop up */
+
+.fixed {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(40, 40, 48, 0.822);
+  /* backdrop-filter: blur(5px); */
+}
+
+
+@keyframes mymove {
+  0%   {scale:0.5;}
+
+  90% {scale: 1.1;}
+  100% {scale: 1;}
+} 
+
+header .fixed ul.model {
+  animation: mymove 0.2s 1;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: var(--secondary);
+  box-shadow: 0px 0px 8px rgba(77, 75, 75, 0.11);
+  
+}
+
+header .fixed ul.model li{
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+  padding-top: 4px;
+  
+}
+header .fixed ul.model li:last-child{
+  border: none;
+  
+}
+header .fixed ul.model li a{
+  font-size: 1rem;
+}
+
+header .fixed ul.model li:first-child{
+  text-align: right;
+  border: none;
+  padding: 0;
+  
+  
+}
+header .icon-menu , header .icon-moon-o{
+  background-color: black;
+  border: 1px solid  rgba(182, 179, 177, 0.342);
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px   rgba(102, 81, 68, 0.329);
+  color: var(--subtitle);
+  height: 50%;
+  width: 50%;
+
+}
+.icon-moon-o{
+  font-size: 25px;
+  color: var(--subtitle);
+  padding: 2px;
+  text-align: center;
+  
+}
+header .icon-menu{
+  height: 1.5rem;
+  width: 1.5rem;
+  text-align: center;
+  
+  padding: 3px;
+  
+}
+
+header .icon-menu:hover , header .icon-moon-o:hover{
+  border: 1.2px solid rgba(72, 139, 148, 0.329);
+  box-shadow:1px 1px 6px   rgba(224, 207, 195, 0.541) ;
+  color: var(--title);
+  transition: 0.4s;
+}
+
+.menu{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #dddddd35;
+  border: none;
+  padding:5px ;
+   .menu-button{
+    width: 30px;
+    text-align: center;
+    background-color: #dddddd35;
+    border-radius: 50%;
+    padding:none ;
+   }
+}
+
+.flix{
+  display: flex;
+
+  .icon-moon-o{
+    justify-content: end;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+header button.menu {
+  display: block;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px) {
+  header.flix nav {display: none;}
+
+  header button.menu {
+    display: block;
+  }
+}
+
+
+
+header .icon-close{
+  font-size: 30px;
+
+}
+header .icon-close:hover{
+  font-size: 25px;
+  transition: 0.3s;
+  rotate: 180deg;
+  color: brown;
+
+}
+
+
